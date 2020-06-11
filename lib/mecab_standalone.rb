@@ -1,5 +1,5 @@
 class MecabStandalone
-  def self.yomi(input, dic = "#{__dir__ }/lib/mecab/dic/ipadic/")
+  def self.yomi(input, rcfile = "#{__dir__ }/lib/mecabrc", dic = "#{__dir__ }/lib/mecab/dic/ipadic/")
     `echo #{input} | #{__dir__ }/bin/mecab -d #{dic} -Oyomi`
   end
 end
