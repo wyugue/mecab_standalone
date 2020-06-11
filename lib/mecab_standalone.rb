@@ -3,6 +3,6 @@ class MecabStandalone
 
   def self.yomi(input, rcfile = "#{__dir__ }/etc/mecabrc", dic = "#{__dir__ }/lib/mecab/dic/ipadic/")
     # `echo #{input} | #{__dir__ }/bin/mecab -r #{rcfile} -d #{dic} -Oyomi`
-    IO.popen({'LD_LIBRAY_PATH' => path}, "echo #{input} | #{__dir__ }/bin/mecab -r #{rcfile} -d #{dic} -Oyomi").read
+    IO.popen({'LD_LIBRAY_PATH' => LD_LIBRAY_PATH}, "echo #{input} | #{__dir__ }/bin/mecab -r #{rcfile} -d #{dic} -Oyomi").read
   end
 end
