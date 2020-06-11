@@ -1,2 +1,1 @@
-# mecab-stand-alone
 Mecab
