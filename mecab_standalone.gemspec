@@ -2,7 +2,7 @@ $LOAD_PATH.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = 'mecab_standalone'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.date        = '2020-06-10'
   s.summary     = 'mecab_standalone'
   s.description = 'A simple Mecab stand alone gem'
