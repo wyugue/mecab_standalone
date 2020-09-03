@@ -2,8 +2,8 @@ $LOAD_PATH.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = 'mecab_standalone'
-  s.version     = '0.1.0'
-  s.date        = '2020-06-10'
+  s.version     = '0.1.1'
+  s.date        = '2020-09-03'
   s.summary     = 'mecab_standalone'
   s.description = 'A simple Mecab stand alone gem'
   s.authors     = ['Taku Kudo']
@@ -11,7 +11,9 @@ Gem::Specification.new do |s|
   s.license     = 'MIT'
   s.homepage    = 'https://taku910.github.io/mecab/'
   s.files       = ['lib/mecab_standalone.rb']
+  s.files      += ['lib/libmecab.so.2.0.0']
   s.files      += Dir['lib/bin/*']
   s.files      += Dir['lib/etc/*']
+  s.files      += Dir['lib/lib/*']
   s.files      += Dir['lib/lib/mecab/dic/ipadic/*']
 end
